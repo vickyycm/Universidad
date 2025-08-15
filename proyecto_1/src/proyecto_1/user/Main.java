@@ -1,4 +1,4 @@
-package proyecto_1;
+package proyecto_1.user;
 
 public class Main {
 
