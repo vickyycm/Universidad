@@ -1,4 +1,4 @@
-package proyecto_1.logica;
+package logica;
 
 import java.util.LinkedList;
 
@@ -10,7 +10,6 @@ public class Materia {
 	protected LinkedList<Profesor> profesores;
 	
 	public Materia(String nombre, int id_materia, boolean correlativa, LinkedList<Profesor> profesores) {
-		super();
 		this.nombre = nombre;
 		this.id_materia = id_materia;
 		this.correlativa = correlativa;
@@ -47,6 +46,12 @@ public class Materia {
 
 	public void setProfesores(LinkedList<Profesor> profesores) {
 		this.profesores = profesores;
+	}
+
+	@Override
+	public String toString() {
+		return "Materia [nombre=" + nombre + ", id_materia=" + id_materia + ", correlativa=" + correlativa
+				+ ", profesores=" + profesores + "]";
 	}
 	
 	

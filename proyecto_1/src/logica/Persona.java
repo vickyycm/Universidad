@@ -1,8 +1,8 @@
-package proyecto_1.logica;
+package logica;
 
 import java.time.LocalDate;
 
-public class Persona {
+public class Persona { 
 
 	protected String nombre;
 	protected String apellido;
@@ -56,6 +56,12 @@ public class Persona {
 
 	public void setFecha_nac(LocalDate fecha_nac) {
 		this.fecha_nac = fecha_nac;
+	}
+
+	@Override
+	public String toString() {
+		return "Persona [nombre=" + nombre + ", apellido=" + apellido + ", mail=" + mail + ", dni=" + dni
+				+ ", fecha_nac=" + fecha_nac + "]";
 	}
 	
 	

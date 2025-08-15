@@ -1,4 +1,4 @@
-package proyecto_1.logica;
+package logica;
 
 import java.util.LinkedList;
 
@@ -9,7 +9,6 @@ public class Carrera {
 	protected LinkedList<Materia> materias;
 	
 	public Carrera(String nombre, int id_carrera, LinkedList<Materia> materias) {
-		super();
 		this.nombre = nombre;
 		this.id_carrera = id_carrera;
 		this.materias = materias;
@@ -37,6 +36,11 @@ public class Carrera {
 
 	public void setMaterias(LinkedList<Materia> materias) {
 		this.materias = materias;
+	}
+
+	@Override
+	public String toString() {
+		return "Carrera [nombre=" + nombre + ", id_carrera=" + id_carrera + ", materias=" + materias + "]";
 	}
 	
 	

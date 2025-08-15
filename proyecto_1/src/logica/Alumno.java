@@ -1,10 +1,10 @@
-package proyecto_1.logica;
+package logica;
 
 import java.time.LocalDate;
 import java.util.LinkedList;
 
 public class Alumno extends Persona{
-
+ 
 	protected Carrera carrera;
 	protected LinkedList<Materia> materias_aprov;
 	protected LinkedList<Materia> materias_curso;
@@ -46,6 +46,14 @@ public class Alumno extends Persona{
 
 	public void setMaterias_curso(LinkedList<Materia> materias_curso) {
 		this.materias_curso = materias_curso;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Alumno [carrera=" + carrera + ", materias_aprov=" + materias_aprov + ", materias_curso="
+				+ materias_curso + ", nombre=" + nombre + ", apellido=" + apellido + ", mail=" + mail + ", dni=" + dni
+				+ ", fecha_nac=" + fecha_nac + "]";
 	}
 
 

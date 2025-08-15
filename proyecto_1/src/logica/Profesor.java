@@ -1,4 +1,4 @@
-package proyecto_1.logica;
+package logica;
 
 import java.time.LocalDate;
 import java.util.LinkedList;
@@ -11,7 +11,7 @@ public class Profesor extends Persona{
 			LinkedList<Materia> materias) {
 		super(nombre, apellido, mail, dni, fecha_nac);
 		this.materias = materias;
-	}
+	} 
 
 	public LinkedList<Materia> getMaterias() {
 		return materias;
@@ -19,6 +19,11 @@ public class Profesor extends Persona{
 
 	public void setMaterias(LinkedList<Materia> materias) {
 		this.materias = materias;
+	}
+
+	@Override
+	public String toString() {
+		return "Profesor [materias=" + materias + "]";
 	}
 	
 	
